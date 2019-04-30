@@ -1,4 +1,4 @@
-# An-open-store-for-variant-and-gene-prioritization-tools
+# An open store for variant and gene prioritization tools
 
 ## Introduction 
 
