@@ -1,7 +1,7 @@
 # 'title' is the name of the module that will be displayed to the user
 title: Annotator Template
 
-# 'version' is the version of the annotator. It is primarily used when 
+# 'version' is the version of the annotator. It is primarily used when
 # publishing a module, but is required for all modules.
 version: 0.0.1
 
@@ -11,6 +11,8 @@ type: annotator
 
 # 'level' is 'variant' or 'gene'
 level: variant
+
+input_format: .crv
 
 # output_columns has the columns that will be included in the output file.
 # The columns are defined in a list. Each column has three required keys:
@@ -22,7 +24,7 @@ output_columns:
   # title is the display name of this column, similar to the title of the module.
   # It can be changed without affecting the functionality of CRAVAT
   title: Placeholder Annotation
-  # type is the data type of the value. It is primarily used when storing the 
+  # type is the data type of the value. It is primarily used when storing the
   # results in a database. It may be one of string, int, or float.
   type: string
 
@@ -32,8 +34,8 @@ description: Template annotator. If you see this description in production, some
 
 # developer is you!
 developer:
-  name: ''
-  organization: ''
+  name: 'Kymberleigh Pagel, Lead; Anna Chang; Zhi Liu; Summer Rankin; Danielle Rubin; Chris Shin'
+  organization: 'NCBI Hackathon 2019'
   email: ''
   website: ''
   citation: ''

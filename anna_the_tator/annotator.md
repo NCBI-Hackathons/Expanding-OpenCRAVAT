@@ -1,5 +1,7 @@
 
-# Example Annotator
+# RNA-seqing Susan
+
+Sources of single cell RNA-seq expression data
 
 Three outputs:
 1. The variant's genomic position along the chromosome as in the range [0,1], where 0 is the first position of the chromosome, and 1 is the last.
