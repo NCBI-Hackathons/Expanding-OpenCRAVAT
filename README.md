@@ -1,6 +1,6 @@
 # An open store for variant and gene prioritization tools
 
-## First Presentation
+## Hackathon Plan and Workflow
 https://docs.google.com/presentation/d/1C_p9PoqMJO7S-NiPOicfLBqYM05rHTgOBhZ2nf1bzoY/edit?usp=sharing
 
 
