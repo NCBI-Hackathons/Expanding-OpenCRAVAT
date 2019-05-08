@@ -11,9 +11,11 @@ Open-CRAVAT is a python package that performs genomic variant interpretation. Th
 ![alt text](results.png) 
 *Example of the Open-CRAVAT interface*
 
-## Installation 
+## How to install of OpenCRAVAT
 
 For local installation on Mac and Windows see the Quickstart guide here: https://github.com/KarchinLab/open-cravat/wiki/quickstart
+
+OpenCRAVAT developer tutorial is available here: https://github.com/KarchinLab/open-cravat/wiki/4.-Developer-Tutorial-(Annotators)
 
 ## Goal and flowchart
 
