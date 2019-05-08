@@ -24,3 +24,27 @@ OpenCRAVAT developer tutorial is available here: https://github.com/KarchinLab/o
 
 To accomplish these tasks, we will need to carefully format the data and generate several accessory files necessary for incorporation into OpenCRAVAT 
 ![alt text](flowchart.png) 
+
+## Components necessary to create an annotator 
+
+A cravat annotator consists of a python file, a YAML file, a data directory, and a markdown file. The file structure is 
+
+```text
+annotator/
+    |───annotator.md
+    |───annotator.yml
+    |───annotator.py
+    └───data/
+```
+
+### `annotator.md`
+
+The markdown file describes the module to prospective users. 
+
+### `annotator.yml`
+
+The YAML file defines the input and output interfaces between an annotator and the rest of OpenCRAVAT. The YAML file specifies what data will be fed to `annotator.py`, and what data OpenCRAVAT should expect `annotator.py` to return. 
+
+### `annotator.py`
+
+The python module receives input data describing a single variant/gene, and uses it to lookup additional information specific to that annotator. An `annotator.py` works by extending a provided base class, `BaseAnnotator`, and implementing three instance methods: `setup`, `annotate`, and `cleanup`.
