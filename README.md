@@ -1,6 +1,6 @@
 # An open store for variant and gene prioritization tools
 
-# First Presentation
+## First Presentation
 https://docs.google.com/presentation/d/1C_p9PoqMJO7S-NiPOicfLBqYM05rHTgOBhZ2nf1bzoY/edit?usp=sharing
 
 
@@ -14,3 +14,11 @@ Open-CRAVAT is a python package that performs genomic variant interpretation. Th
 ## Installation 
 
 For local installation on Mac and Windows see the Quickstart guide here: https://github.com/KarchinLab/open-cravat/wiki/quickstart
+
+## Goal and flowchart
+
+(1) Add in sources of single cell RNA-seq expression data <br>
+(2) Additional representation for under-studied populations
+
+To accomplish these tasks, we will need to carefully format the data and generate several accessory files necessary for incorporation into OpenCRAVAT 
+![alt text](flowchart.png) 
