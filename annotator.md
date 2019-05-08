@@ -1,4 +1,0 @@
-
-# Annotator
-
-Description of annotator
