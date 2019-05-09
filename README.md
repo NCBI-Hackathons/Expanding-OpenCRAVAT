@@ -9,20 +9,20 @@ Danielle Rubin, NIH, Bethesda MD 20892, <danielle.rubin@nih.gov>  <br>
 Chris Shin, NIH/NIAID, Bethesda MD 20892, <chris.shin@nih.gov> <br>
 
 
-## Introduction to Open-CRAVAT
+## Introduction to Open CRAVAT
 
-[Open-CRAVAT](https://github.com/KarchinLab/open-cravat) is a python package that performs genomic variant interpretation. The modular and locally-installed command-line or GUI interface allows for  annoations of gene- and variant-level impact, interactions, conservation, and scoring. In this work, we advance the platform by the addition of new annoation sources to assist in the interrogation of genetic variation.
+[Open CRAVAT](https://github.com/KarchinLab/open-cravat) is a python package that performs genomic variant interpretation. The modular and locally-installed command-line or GUI interface allows for  annoations of gene- and variant-level impact, interactions, conservation, and scoring. In this work, we advance the platform by the addition of new annoation sources to assist in the interrogation of genetic variation.
 
 ![alt text](images/results.png) 
-*Example of the Open-CRAVAT interface*
+*Example of the Open CRAVAT interface*
 
 ### Annotators
-As of May 2019, the Open-CRAVAT Store has 65 annotators, converters, and visualization widgets available for use. Annotators range from genomic feature insights to population-level frequencies and clinical interpretations. Convertors take input in forms other than VCF (Variant Cell Format), such as dbSNP rsid and 23andMe formats, and make them compatible to Open-CRAVAT. There are currently three visualization widgets that can be downloaded: a summary of the top genes ranked by total variants, a haplotype information widget, and an embedded interactive genome visualization component developed by [Integrative Genomics Viewer (IGV)](https://github.com/igvteam/igv.js). 
+As of May 2019, the Open CRAVAT Store has 65 annotators, converters, and visualization widgets available for use. Annotators range from genomic feature insights to population-level frequencies and clinical interpretations. Convertors take input in forms other than VCF (Variant Cell Format), such as dbSNP rsid and 23andMe formats, and make them compatible to Open-CRAVAT. There are currently three visualization widgets that can be downloaded: a summary of the top genes ranked by total variants, a haplotype information widget, and an embedded interactive genome visualization component developed by [Integrative Genomics Viewer (IGV)](https://github.com/igvteam/igv.js). 
 
 ![alt text](images/store_front_page.png)
-*Home Page for the Open-CRAVAT store*
+*Home Page for the Open CRAVAT store*
 
-Data Sources Accessible through open-CRAVAT | Type of Data
+Data Sources Accessible through Open CRAVAT | Type of Data
  ------- | ---
 [1000 Genomes Project](http://www.internationalgenome.org/home) | allele frequencies
 [The Cancer Genome Atlas](https://gdc.cancer.gov/about-data/publications/ATACseq-AWG) | genome-wide chromatin accessibility profiles of tumor samples 
@@ -65,7 +65,7 @@ Data Sources Accessible through open-CRAVAT | Type of Data
 [VISTA Enhancer Browser](https://enhancer.lbl.gov/)  | experimentally validated enhancers 
 
 
-Analysis Tools Available through open-CRAVAT | Function
+Analysis Tools Available through Open CRAVAT | Function
 -----|-----
 [CHASMplus](http://chasmplus.readthedocs.io/en/latest/) | classification of missense mutations as drivers or passengers in human cancers 
 [FATHMM](http://fathmm.biocompute.org.uk/index.html )| prediction of functional effects of protein missense mutations|
@@ -85,7 +85,6 @@ Analysis Tools Available through open-CRAVAT | Function
 
 For local installation on Mac and Windows see the Quickstart guide here: https://github.com/KarchinLab/open-cravat/wiki/quickstart
 
-OpenCRAVAT developer tutorial is available here: https://github.com/KarchinLab/open-cravat/wiki/4.-Developer-Tutorial-(Annotators)
 
 ## Hackathon Goals
 
@@ -105,13 +104,13 @@ In particular, native American and Middle Eastern populations represent populati
 Gene lists are groups of genes known to be influential in the development and/or maintenance of molecular pathways or diseases. We plan on implementing a module that allows users to see if the variants in their uploaded file correspond to a significant proportion of genes in validated gene lists.  
 
 ## Flowchart
-To accomplish these tasks, we will need to carefully format the data and generate several accessory files necessary for incorporation into OpenCRAVAT 
+To accomplish these tasks, we will need to carefully format the data and generate several accessory files necessary for incorporation into Open CRAVAT 
 ![alt text](images/flowchart.png) 
 
 
 ### Components necessary to create an annotator (from [open-CRAVAT wiki](https://github.com/KarchinLab/open-cravat/wiki/4.-Developer-Tutorial-(Annotators)))
 
-An open-CRAVAT annotator consists of a python file, a YAML file, a data directory, and a markdown file. The file structure is 
+An Open CRAVAT annotator consists of a python file, a YAML file, a data directory, and a markdown file. The file structure is 
 
 ```text
 annotator/
