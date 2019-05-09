@@ -104,13 +104,14 @@ In particular, native American and Middle Eastern populations represent populati
 **(3) Stretch Goal: Identify sources of curated gene lists** <br>
 Gene lists are groups of genes known to be influential in the development and/or maintenance of molecular pathways or diseases. We plan on implementing a module that allows users to see if the variants in their uploaded file correspond to a significant proportion of genes in validated gene lists.  
 
+## Flowchart
 To accomplish these tasks, we will need to carefully format the data and generate several accessory files necessary for incorporation into OpenCRAVAT 
 ![alt text](images/flowchart.png) 
 
 
-### Components necessary to create an annotator 
+### Components necessary to create an annotator (from [open-CRAVAT wiki](https://github.com/KarchinLab/open-cravat/wiki/4.-Developer-Tutorial-(Annotators)))
 
-A cravat annotator consists of a python file, a YAML file, a data directory, and a markdown file. The file structure is 
+An open-CRAVAT annotator consists of a python file, a YAML file, a data directory, and a markdown file. The file structure is 
 
 ```text
 annotator/
@@ -159,6 +160,6 @@ We will incorporate allele frequencies from [HGDP](https://www.hagsc.org/hgdp/).
 * Network of cancer genes http://ncg.kcl.ac.uk/ 
   * Can generate cancer-type specific gene lists using "Advanced" option
 * [NetVenn](https://probes.pw.usda.gov/NetVenn/#&panel1-5) collection of gene sets for humans and animals  https://probes.pw.usda.gov/NetVenn/downloads.php <br>
-*SFARI GENE https://www.sfari.org/resource/sfari-gene/
+* SFARI GENE https://www.sfari.org/resource/sfari-gene/
 
 
