@@ -78,6 +78,13 @@ We will aggregate single cell human RNA-seq data from the [Allen Brain Atlas](ht
 
 The brain regions we are examining are the Anterior Cingulate Cortex (7283 single cells), the Lateral Geniculate Nucleus (1576 single cells), the Medial Temporal Gyrus, and Primary Visual Cortex. 
 
+![alt text](images/httexample.PNG) <br>
+*Example of Huntington Protein expression in two brain regions*
+
+![alt text](images/sodexample.PNG) <br>
+*Example of APOE expression in two brain regions*
+
+
 ### Goal 2: Representation for under-studied populations
 We will incorporate allele frequencies from [HGDP](https://www.hagsc.org/hgdp/). 
 
