@@ -22,8 +22,6 @@ As of May 2019, the Open-CRAVAT Store has 65 annotators and converters available
 ![alt text](store_front_page.png)
 *Home Page for the Open-CRAVAT store*
 
-### Output
-
 ### Installation
 
 For local installation on Mac and Windows see the Quickstart guide here: https://github.com/KarchinLab/open-cravat/wiki/quickstart
