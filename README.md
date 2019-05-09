@@ -77,7 +77,7 @@ Analysis Tools Available through open-CRAVAT | Function
 [MuPIT](http://mupit.icm.jhu.edu/MuPIT_Interactive/ )| mapping genomic coordinates of SNVs on 3D protein structures 
 [MutPred](http://mutpred1.mutdb.org/ ) | classification of amino acid substitution 
 [PhD-SNPg](http://snps.biofold.org/phd-snpg/index.html)  | predictor for pathogenic variants in coding and non-coding regions 
-[REVEL](https://sites.google.com/site/revelgenomics/).  | predictor for pathogenicity of missense variants 
+[REVEL](https://sites.google.com/site/revelgenomics/)| predictor for pathogenicity of missense variants 
 [VEST](http://karchinlab.org/apps/appVest.html) | predictor for functional significance of missense mutations based on the probability that they are pathogenic 
 
 
