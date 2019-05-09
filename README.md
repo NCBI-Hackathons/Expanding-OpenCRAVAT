@@ -1,6 +1,6 @@
 # An open store for variant and gene prioritization tools
 
-## Hackathon Members
+### Hackathon Members
 Kymberleigh Pagel
 Anna Chang
 Zhi Liu
@@ -30,7 +30,7 @@ For local installation on Mac and Windows see the Quickstart guide here: https:/
 
 OpenCRAVAT developer tutorial is available here: https://github.com/KarchinLab/open-cravat/wiki/4.-Developer-Tutorial-(Annotators)
 
-## Hackathon Goals and Flowchart
+## Hackathon Goals
 
 ## Hackathon Plan and Workflow
 https://docs.google.com/presentation/d/1C_p9PoqMJO7S-NiPOicfLBqYM05rHTgOBhZ2nf1bzoY/edit?usp=sharing
