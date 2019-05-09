@@ -11,16 +11,17 @@ Open-CRAVAT is a python package that performs genomic variant interpretation. Th
 ![alt text](results.png) 
 *Example of the Open-CRAVAT interface*
 
-## How to install of OpenCRAVAT
+### How to install of OpenCRAVAT
 
 For local installation on Mac and Windows see the Quickstart guide here: https://github.com/KarchinLab/open-cravat/wiki/quickstart
 
 OpenCRAVAT developer tutorial is available here: https://github.com/KarchinLab/open-cravat/wiki/4.-Developer-Tutorial-(Annotators)
 
-## Goal and flowchart
+## Goals and flowchart
 
 (1) Add in sources of single cell RNA-seq expression data <br>
-(2) Additional representation for under-studied populations
+(2) Additional representation for under-studied populations <br> 
+(3) Stretch goal: Identifying sources of curated gene lists
 
 To accomplish these tasks, we will need to carefully format the data and generate several accessory files necessary for incorporation into OpenCRAVAT 
 ![alt text](flowchart.png) 
@@ -48,3 +49,11 @@ The YAML file defines the input and output interfaces between an annotator and t
 ### `annotator.py`
 
 The python module receives input data describing a single variant/gene, and uses it to lookup additional information specific to that annotator. An `annotator.py` works by extending a provided base class, `BaseAnnotator`, and implementing three instance methods: `setup`, `annotate`, and `cleanup`.
+
+
+## Goal 1: Add in sources of single cell RNA-seq expression data 
+## Goal 2: Representation for under-studied populations
+## Stretch Goal: Assembling well-curated gene lists
+
+(1) MacArthur lab: https://github.com/macarthur-lab/gene_lists  <br>
+(2) ImmPort https://www.immport.org/shared/genelists
