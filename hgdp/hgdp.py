@@ -25,67 +25,42 @@ class CravatAnnotator(BaseAnnotator):
         keyword argument, secondary_data.
 
         input_data is a dictionary containing the data from the current input
-        line. The keys depend on what what file is used as the input, which can
-        be changed in the module_name.yml file.
-
-        Variant level includes the following keys:
+        line. input_data includes the following keys:
             ('uid', 'chrom', 'pos', 'ref_base', 'alt_base')
-        Variant level crx files expand the key set to include:
-            ('hugo', 'transcript','so','all_mappings')
 
-         keys in input_data (one flat table):
-        CHR     POS     ID      REF     ALT    African    European    Middle_Eastern
-        CS_Asian     East_Asian    Oceanian    Native_American
+        keys in the annotator database (one flat table):
+        CHR  POS  ID   REF  ALT    African    European    Middle_Eastern    CS_Asian     East_Asian    Oceanian    Native_American
 
 
         should return a dictionary with keys matching the column names
         defined in example_annotator.yml. Extra column names will be ignored,
-        and absent column names will be filled with None. Check your output
-        carefully to ensure that your data is ending up where you intend.
+        and absent column names will be filled with None.
         """
+        out = {}
 
-        # get position
-        input_chrom = input_data['chrom']
-        sql = 'SELECT * FROM hgdpTable WHERE CHR="' + input_chrom + '" AND POS="' + input_pos + '"'
+        # get input details
+        input_chrom = input_data['chrom'].lower()
+        input_pos = input_data['pos']
+        input_ref = input_data['ref_base']
+        input_alt = input_data['alt_base']
 
-        self.cursor.execute(sql)
-        hgdp_match = self.cursor.fetchall()
+        sql_q = 'SELECT African, European, Middle_Eastern, CS_Asian, East_Asian, Oceanian, Native_American FROM hgdp_table WHERE CHR={} AND POS={} AND REF={} and ALT={};'.format(input_chrom, input_pos, input_ref, input_alt)
 
-        if hgdp_match[0] is not None:
-            african_allele_freq = 0
-            european_allele_freq = 0
-            if hgdp_match[0]['African']  is not None:
-                out['african_allele_freq'] += hgdp_match[0]['African']
+        self.cursor.execute(sql_q)
+        sql_q_result = self.cursor.fetchone()
 
-            elif  hgdp_match[element]['European'] is not None:
-                out['european_allele_freq'] += hgdp_match[0]['European']
-
-            #c_len = hgdp_match[0]
-            #var_position = input_data['pos']/c_len
-        else:
-            pass
+        african_allele_freq = ''
+        european_allele_freq = ''
 
 
-        ### get reference
-        #verbose_ref = ''
-        #for abbv in input_data['ref_base']:
-    #        verbose_ref_query = 'select full_name from nucleotide_names where abbreviation="%s"' %abbv
-#            self.cursor.execute(verbose_ref_query)#
-            #verbose_ref_result = self.cursor.fetchone()
-            #if verbose_ref_result is not None:
-        #        verbose_ref += verbose_ref_result[0]
-        #out['verbose_ref'] = verbose_ref
+        if sql_q_result:
+            african_allele_freq += sql_q_result[0]
+            out['african_allele_freq'] = african_allele_freq
 
-        ### allele frequency
+            european_allele_freq += sql_q_result[1]
+            out['european_allele_freq'] = european_allele_freq
 
-
-        out['allele_frequency'] = allele_frequency
-
-        ##### Get ref_len
-        cleaned_ref_base = input_data['ref_base']#.replace('-','')
-        out['ref_len'] = len(cleaned_ref_base)
-
-        return out
+            return out
 
 
     def cleanup(self):
