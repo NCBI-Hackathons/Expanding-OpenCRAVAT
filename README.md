@@ -34,6 +34,9 @@ OpenCRAVAT developer tutorial is available here: https://github.com/KarchinLab/o
 https://docs.google.com/presentation/d/1C_p9PoqMJO7S-NiPOicfLBqYM05rHTgOBhZ2nf1bzoY/edit?usp=sharing
 
 (1) Add in sources of single cell RNA-seq expression data <br>
+
+The Allen Brain Atlas includes a gene expression survey in multiple adult control brains integrating anatomic and genomic information. The dataset includes more than 62,000 gene probes per profile with around 500 samples per hemisphere across cerebrum, cerebellum and brainstem. In this work, we seek to create an OpenCRAVAT annotator that displays whether a given gene is expressed within different regions of the brain. A potential application for this annotator would include supporting the analysis of variants putatively related to ASD and other neurodevelopmental disease, to ascertain variants within genes that are expressed in the appropriate brain regions. 
+
 (2) Additional representation for under-studied populations <br> 
 
 The Human Genome Diversity Project https://www.hagsc.org/hgdp/ from Stanford analyzed DNA from 1,043 individuals among 51 different populations of Africa, Europe, Middle East, South and Central Asia, East Asia, Oceania and the Americas. Details on the individuals included in this collection are descibed in H. Cann et al. Science 296: 261-262 (2002) and its Supplemental Data; Rosenberg et al. Science 298: 2381-2385 (2002); and Rosenberg et al. PLoS Genetics 1: 660-671 (2005).
