@@ -1,5 +1,5 @@
 # 'title' is the name of the module that will be displayed to the user
-title: hgdp
+title: Human Genome Diversity Panel (HGDP)
 
 # 'version' is the version of the annotator. It is primarily used when
 # publishing a module, but is required for all modules.
@@ -15,15 +15,48 @@ level: variant
 input_format: .crv
 
 output_columns:
-  - name: var_position
-    title: Chrom start fraction
-    type: float
-  - name: verbose_ref
-    title: Full nucleotide reference
-    type: string
-  - name: ref_len
-    title: Reference length
-    type: int
+- filterable: true
+  name: european_allele_freq
+  title: European Population Allele Frequency
+  type: float
+  width: 68
+- filterable: true
+  name: african_allele_freq
+  title: African Population Allele Frequency
+  type: float
+  width: 68
+- filterable: true
+  name: middle_eastern_allele_freq
+  title: Middle Eastern Population Allele Frequency
+  type: float
+  width: 68
+- filterable: true
+  name: east_asian_allele_freq
+  title: East Asian Population Allele Frequency
+  type: float
+  width: 68
+- filterable: true
+  name: cs_asian_allele_freq
+  title: CS Asian Population Allele Frequency
+  type: float
+  width: 68
+- filterable: true
+  name: oceanian_allele_freq
+  title: Oceanian Population Allele Frequency
+  type: float
+  width: 68
+- filterable: true
+  name:  native_american_allele_freq
+  title:  Native American Population Allele Frequency
+  type: float
+  width: 68
+
+tags:
+- variants
+- populations
+- human
+- diversity
+
 
 # description is a short description of what the annotator does. Try to limit it
 # to around 80 characters.

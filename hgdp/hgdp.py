@@ -33,6 +33,10 @@ class CravatAnnotator(BaseAnnotator):
         Variant level crx files expand the key set to include:
             ('hugo', 'transcript','so','all_mappings')
 
+         keys in input_data (one flat table):
+        CHR     POS     ID      REF     ALT    African    European    Middle_Eastern
+        CS_Asian     East_Asian    Oceanian    Native_American
+
 
         should return a dictionary with keys matching the column names
         defined in example_annotator.yml. Extra column names will be ignored,
@@ -41,31 +45,41 @@ class CravatAnnotator(BaseAnnotator):
         """
 
         # get position
-        hugo = input_data['hugo']
-        sql = 'SELECT someVariable FROM someTable WHERE hugo="' + hugo + '"'
+        input_chrom = input_data['chrom']
+        sql = 'SELECT * FROM hgdpTable WHERE CHR="' + input_chrom + '" AND POS="' + input_pos + '"'
 
         self.cursor.execute(sql)
-        query_result = self.cursor.fetchone()
-        if query_result is not None:
-            c_len = query_result[0]
-            var_position = input_data['pos']/c_len
-        else:
-            var_position = None
+        hgdp_match = self.cursor.fetchall()
 
-        out['var_position'] = var_position
+        if hgdp_match[0] is not None:
+            african_allele_freq = 0
+            european_allele_freq = 0
+            if hgdp_match[0]['African']  is not None:
+                out['african_allele_freq'] += hgdp_match[0]['African']
+
+            elif  hgdp_match[element]['European'] is not None:
+                out['european_allele_freq'] += hgdp_match[0]['European']
+
+            #c_len = hgdp_match[0]
+            #var_position = input_data['pos']/c_len
+        else:
+            pass
 
 
         ### get reference
-        verbose_ref = ''
-        for abbv in input_data['ref_base']:
-            verbose_ref_query = 'select full_name from nucleotide_names where abbreviation="%s"' %abbv
-            self.cursor.execute(verbose_ref_query)
-            verbose_ref_result = self.cursor.fetchone()
-            if verbose_ref_result is not None:
-                verbose_ref += verbose_ref_result[0]
-        out['verbose_ref'] = verbose_ref
+        #verbose_ref = ''
+        #for abbv in input_data['ref_base']:
+    #        verbose_ref_query = 'select full_name from nucleotide_names where abbreviation="%s"' %abbv
+#            self.cursor.execute(verbose_ref_query)#
+            #verbose_ref_result = self.cursor.fetchone()
+            #if verbose_ref_result is not None:
+        #        verbose_ref += verbose_ref_result[0]
+        #out['verbose_ref'] = verbose_ref
+
+        ### allele frequency
 
 
+        out['allele_frequency'] = allele_frequency
 
         ##### Get ref_len
         cleaned_ref_base = input_data['ref_base']#.replace('-','')
