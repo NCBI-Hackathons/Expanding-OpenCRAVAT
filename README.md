@@ -19,6 +19,9 @@ Open-CRAVAT is a python package that performs genomic variant interpretation. Th
 ### Annotators
 As of May 2019, the Open-CRAVAT Store has 65 annotators and converters available for use. Annotators range from genomic feature insights to population-level frequencies and clinical interpretations. Convertors take input in forms other than VCF (Variant Cell Format), such as dbSNP rsid and 23andMe formats, and make them compatible to Open-CRAVAT.  
 
+![alt text](store_front_page.png)
+*Home Page for the Open-CRAVAT store*
+
 ### Output
 
 ### Installation
@@ -67,10 +70,6 @@ annotator/
 ## Progress
 ### Goal 1: Add in sources of single cell RNA-seq expression data 
 ### Goal 2: Representation for under-studied populations
-
-![alt text](hgdp_data.png) <br>
-*HGDP source data file format*
-
 ### Stretch Goal: Assembling sources of well-curated gene lists
 
 * MacArthur lab: https://github.com/macarthur-lab/gene_lists  <br>
