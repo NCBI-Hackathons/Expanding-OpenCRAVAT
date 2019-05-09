@@ -1,12 +1,12 @@
 # An open store for variant and gene prioritization tools
 
 ### Hackathon Members
-Kymberleigh Pagel <br>
-Anna Chang<br>
+Kymberleigh Pagel, Johns Hopkins University, Baltimore MD 21218, <kpagel1@jhu.edu>  <br>
+Anna Chang, Johns Hopkins University, Baltimore MD 21205, <achang44@jhmi.edu> <br>
 Zhi Liu<br>
 Summer Raskin<br>
 Danielle Rubin<br>
-Chris Shin<br>
+Chris Shin, NIH/NIAID, Bethesda MD 20892 <chris.shin@nih.gov> <br>
 
 
 ## Introduction to Open-CRAVAT
@@ -100,6 +100,5 @@ We will incorporate allele frequencies from [HGDP](https://www.hagsc.org/hgdp/).
 * Network of cancer genes http://ncg.kcl.ac.uk/ 
   * Can generate cancer-type specific gene lists using "Advanced" option
 * [NetVenn](https://probes.pw.usda.gov/NetVenn/#&panel1-5) collection of gene sets for humans and animals  https://probes.pw.usda.gov/NetVenn/downloads.php <br>
-* [SFARI Gene](https://gene.sfari.org/database/human-gene/) Gene sets relevant to autism spectrum disorders
 
 
