@@ -1,7 +1,7 @@
 
-# RNA-seqing Susan
+# RNA-seq (RNA sequencing)
 
-Sources of single cell RNA-seq expression data
+Sources of single cell RNA-seq expression data. RNA-seq is a transcriptome profiling approach that uses deep-sequencing technologies, provding a far more precise measurement of levels of transcripts and their isoforms than other methods.
 
 Three outputs:
 1. var_position = The variant's genomic position along the chromosome as in the range [0,1], where 0 is the first position of the chromosome, and 1 is the last.
