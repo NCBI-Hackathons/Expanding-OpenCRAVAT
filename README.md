@@ -30,8 +30,7 @@ OpenCRAVAT developer tutorial is available here: https://github.com/KarchinLab/o
 
 ## Hackathon Goals
 
-## Hackathon Plan and Workflow
-https://docs.google.com/presentation/d/1C_p9PoqMJO7S-NiPOicfLBqYM05rHTgOBhZ2nf1bzoY/edit?usp=sharing
+Link to [Hackathon Plan and Workflow Slides](https://docs.google.com/presentation/d/1C_p9PoqMJO7S-NiPOicfLBqYM05rHTgOBhZ2nf1bzoY/edit?usp=sharing)
 
 *(1) Add in sources of single cell RNA-seq expression data* <br>
 
