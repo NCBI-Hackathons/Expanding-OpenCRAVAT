@@ -1,17 +1,17 @@
 # An open store for variant and gene prioritization tools
 
 ### Hackathon Members
-Kymberleigh Pagel
-Anna Chang
-Zhi Liu
-Summer Raskin
-Danielle Rubin
-Chris Shin
+Kymberleigh Pagel </br>
+Anna Chang</br>
+Zhi Liu</br>
+Summer Raskin</br>
+Danielle Rubin</br>
+Chris Shin</br>
 
 
 ## Introduction to Open-CRAVAT
 
-Open-CRAVAT is a python package that performs genomic variant interpretation. The modular and locally-installed command-line or GUI interface allows for  annoations of gene- and variant-level impact, interactions, conservation, and scoring. In this work, we advance the platform by the addition of new annoation sources to assist in the interrogation of genetic variation.
+[Open-CRAVAT](https://github.com/KarchinLab/open-cravat) is a python package that performs genomic variant interpretation. The modular and locally-installed command-line or GUI interface allows for  annoations of gene- and variant-level impact, interactions, conservation, and scoring. In this work, we advance the platform by the addition of new annoation sources to assist in the interrogation of genetic variation.
 
 ![alt text](results.png) 
 *Example of the Open-CRAVAT interface*
