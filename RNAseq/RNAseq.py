@@ -34,6 +34,12 @@ class CravatAnnotator(BaseAnnotator):
         Gene level files include
             ('hugo', 'num_variants', 'so', 'all_so')
 
+    'hugo': 'PTEN', # HUGO symbol of the gene where the variant is
+    'num_variants': 2, # Number of input variants for the gene in `hugo` key
+    'so': 'FD1', # Most severe sequence ontology of the impact by the variants in the gene
+    'all_mappings': 'FD1(1),FD2(1)' # Variant impact sequence ontology with the number of input variants which produce the same variant impact sequence ontologyon all transcripts which encompass the variant's position
+}
+
         secondary_data is used to allow an annotator to access the output of
         other annotators. It is described in more detail in the CRAVAT
         documentation.
