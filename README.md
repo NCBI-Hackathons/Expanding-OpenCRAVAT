@@ -67,8 +67,8 @@ Data Sources Accessible through open-CRAVAT | Type of Data
 
 Analysis Tools Available through open-CRAVAT | Function
 -----|-----
-[CHASMplus(http://chasmplus.readthedocs.io/en/latest/) | classification of missense mutations as drivers or passengers in human cancers 
-[FATHMM] http://fathmm.biocompute.org.uk/index.html )| prediction of functional effects of protein missense mutations|
+[CHASMplus](http://chasmplus.readthedocs.io/en/latest/) | classification of missense mutations as drivers or passengers in human cancers 
+[FATHMM](http://fathmm.biocompute.org.uk/index.html )| prediction of functional effects of protein missense mutations|
 [GERP++](http://mendel.stanford.edu/SidowLab/downloads/gerp/index.html )| quantification of substitution deficits in multiple alignments
 [IGV](http://www.insilico.us.com ) | interactive genome visualization
 [InterPro](https://www.ebi.ac.uk/interpro/)  | functional analysis of proteins 
