@@ -35,11 +35,11 @@ https://docs.google.com/presentation/d/1C_p9PoqMJO7S-NiPOicfLBqYM05rHTgOBhZ2nf1b
 
 (1) Add in sources of single cell RNA-seq expression data <br>
 
-The Allen Brain Atlas includes a gene expression survey in multiple adult control brains integrating anatomic and genomic information. The dataset includes more than 62,000 gene probes per profile with around 500 samples per hemisphere across cerebrum, cerebellum and brainstem. In this work, we seek to create an OpenCRAVAT annotator that displays whether a given gene is expressed within different regions of the brain. A potential application for this annotator would include supporting the analysis of variants putatively related to ASD and other neurodevelopmental disease, to ascertain variants within genes that are expressed in the appropriate brain regions. 
+The [Allen Brain Atlas](http://human.brain-map.org/) includes a gene expression survey in multiple adult control brains integrating anatomic and genomic information. The dataset includes more than 62,000 gene probes per profile with around 500 samples per hemisphere across cerebrum, cerebellum and brainstem. In this work, we seek to create an OpenCRAVAT annotator that displays whether a given gene is expressed within different regions of the brain. A potential application for this annotator would include supporting the analysis of variants putatively related to ASD and other neurodevelopmental disease, to ascertain variants within genes that are expressed in the appropriate brain regions. 
 
 (2) Additional representation for under-studied populations <br> 
 
-The Human Genome Diversity Project https://www.hagsc.org/hgdp/ from Stanford analyzed DNA from 1,043 individuals among 51 different populations of Africa, Europe, Middle East, South and Central Asia, East Asia, Oceania and the Americas. Details on the individuals included in this collection are descibed in H. Cann et al. Science 296: 261-262 (2002) and its Supplemental Data; Rosenberg et al. Science 298: 2381-2385 (2002); and Rosenberg et al. PLoS Genetics 1: 660-671 (2005).
+The [Human Genome Diversity Project](https://www.hagsc.org/hgdp/) from Stanford analyzed DNA from 1,043 individuals among 51 different populations of Africa, Europe, Middle East, South and Central Asia, East Asia, Oceania and the Americas. Details on the individuals included in this collection are descibed in H. Cann et al. Science 296: 261-262 (2002) and its Supplemental Data; Rosenberg et al. Science 298: 2381-2385 (2002); and Rosenberg et al. PLoS Genetics 1: 660-671 (2005).
 
 In particular, native American and Middle Eastern populations represent populations that are not well represented in OpenCRAVAT. In addition, several subpopulations evaluated in this work do not have representation in either the 1000 Genomes Project or gnomAD, two sources currently available in the OpenCRAVAT store. Due to small sample size n<10 for several subpopulations, we are required to present aggregate per-population allele frequencies to present more meaningful values. 
 
@@ -71,7 +71,7 @@ annotator/
 ## Progress
 ### Goal 1: Add in sources of single cell RNA-seq expression data 
 
-We will aggregate single cell human RNA-seq data from the Allen Brain Atlas for genes of known functional significance in the brain to generate gene expression plots across several brain regions.
+We will aggregate single cell human RNA-seq data from the [Allen Brain Atlas](https://celltypes.brain-map.org/rnaseq) for genes of known functional significance in the brain to generate gene expression plots across several brain regions.
 
 ![alt text](raw_rna_data.PNG) <br>
 *Raw RNA-Seq data from the Allen Brain Atlas*
