@@ -69,8 +69,10 @@ annotator/
 ### Goal 2: Representation for under-studied populations
 ### Stretch Goal: Assembling sources of well-curated gene lists
 
-(1) MacArthur lab: https://github.com/macarthur-lab/gene_lists  <br>
-(2) ImmPort https://www.immport.org/shared/genelists <br>
-(3) Hallmark gene sets from MSigDB http://software.broadinstitute.org/gsea/msigdb/genesets.jsp?collection=H 
-
+* MacArthur lab: https://github.com/macarthur-lab/gene_lists  <br>
+  * Drug targets, essential genes, X-linked disease, mode of inheritance, minimum incidental findings 
+* ImmPort https://www.immport.org/shared/genelists <br>
+* Hallmark gene sets from MSigDB http://software.broadinstitute.org/gsea/msigdb/genesets.jsp?collection=H 
+* Network of cancer genes http://ncg.kcl.ac.uk/ 
+  * Can generate cancer-type specific gene lists using "Advanced" option
 
