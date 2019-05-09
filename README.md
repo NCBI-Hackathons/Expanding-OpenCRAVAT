@@ -76,6 +76,8 @@ We will aggregate single cell human RNA-seq data from the [Allen Brain Atlas](ht
 ![alt text](raw_rna_data.PNG) <br>
 *Raw RNA-Seq data from the Allen Brain Atlas*
 
+The brain regions we are examining are the Anterior Cingulate Cortex (7283 single cells), the Lateral Geniculate Nucleus (1576 single cells), the Medial Temporal Gyrus, and Primary Visual Cortex. 
+
 ### Goal 2: Representation for under-studied populations
 
 ![alt text](hgdp_data.png) <br>
