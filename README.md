@@ -4,7 +4,7 @@
 Kymberleigh Pagel, Johns Hopkins University, Baltimore MD 21218, <kpagel1@jhu.edu>  <br>
 Anna Chang, Johns Hopkins University, Baltimore MD 21205, <achang44@jhmi.edu> <br>
 Zhi Liu, NIH, Bethesda MD 20892, <zhi.liu@nih.gov> <br>
-Summer Raskin<br>
+Summer Rankin, Booz Allen Hamilton, Rockville MD 20852, rankin_summer@bah.com, summer.rankin@fda.hhs.gov <br>
 Danielle Rubin, NIH, Bethesda MD 20892, <danielle.rubin@nih.gov>  <br>
 Chris Shin, NIH/NIAID, Bethesda MD 20892, <chris.shin@nih.gov> <br>
 
