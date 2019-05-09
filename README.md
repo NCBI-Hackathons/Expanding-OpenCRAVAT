@@ -49,4 +49,7 @@ To accomplish these tasks, we will need to carefully format the data and generat
 ## Stretch Goal: Assembling sources of well-curated gene lists
 
 (1) MacArthur lab: https://github.com/macarthur-lab/gene_lists  <br>
-(2) ImmPort https://www.immport.org/shared/genelists
+(2) ImmPort https://www.immport.org/shared/genelists <br>
+(3) Hallmark gene sets from MSigDB http://software.broadinstitute.org/gsea/msigdb/genesets.jsp?collection=H 
+
+
