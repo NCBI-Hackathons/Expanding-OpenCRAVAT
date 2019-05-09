@@ -1,5 +1,5 @@
 # 'title' is the name of the module that will be displayed to the user
-title: Annotator Template
+title: RNAseq
 
 # 'version' is the version of the annotator. It is primarily used when
 # publishing a module, but is required for all modules.
@@ -10,7 +10,7 @@ version: 0.0.1
 type: annotator
 
 # 'level' is 'variant' or 'gene'
-level: variant
+level: gene
 
 input_format: .crv
 
