@@ -67,6 +67,12 @@ annotator/
 
 ## Progress
 ### Goal 1: Add in sources of single cell RNA-seq expression data 
+
+We will aggregate single cell human RNA-seq data from the Allen Brain Atlas for genes of known functional significance in the brain to generate gene expression plots across several brain regions.
+
+![alt text](raw_rna_data.png) <br>
+*Raw RNA-Seq data from the Allen Brain Atlas*
+
 ### Goal 2: Representation for under-studied populations
 
 ![alt text](hgdp_data.png) <br>
