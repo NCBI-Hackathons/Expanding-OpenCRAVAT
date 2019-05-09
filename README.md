@@ -46,7 +46,7 @@ To accomplish these tasks, we will need to carefully format the data and generat
 
 ## Goal 1: Add in sources of single cell RNA-seq expression data 
 ## Goal 2: Representation for under-studied populations
-## Stretch Goal: Assembling well-curated gene lists
+## Stretch Goal: Assembling sources of well-curated gene lists
 
 (1) MacArthur lab: https://github.com/macarthur-lab/gene_lists  <br>
 (2) ImmPort https://www.immport.org/shared/genelists
