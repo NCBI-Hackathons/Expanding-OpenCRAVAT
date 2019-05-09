@@ -68,6 +68,10 @@ annotator/
 ## Progress
 ### Goal 1: Add in sources of single cell RNA-seq expression data 
 ### Goal 2: Representation for under-studied populations
+
+![alt text](hgdp_data.png) <br>
+*HGDP source data file format*
+
 ### Stretch Goal: Assembling sources of well-curated gene lists
 
 * MacArthur lab: https://github.com/macarthur-lab/gene_lists  <br>
