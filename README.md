@@ -21,7 +21,7 @@ As of May 2019, the Open CRAVAT Store has 65 annotators, converters, and visuali
 
 ![alt text](images/store_front_page.png)
 *Home Page for the Open CRAVAT store*
-
+<br> 
 Data Sources Accessible through Open CRAVAT | Type of Data
  ------- | ---
 [1000 Genomes Project](http://www.internationalgenome.org/home) | allele frequencies
@@ -83,7 +83,7 @@ Analysis Tools Available through Open CRAVAT | Function
 
 ### Installation
 
-For local installation on Mac and Windows see the Quickstart guide here: https://github.com/KarchinLab/open-cravat/wiki/quickstart
+For local installation on Mac and Windows see the Quickstart guide [here](https://github.com/KarchinLab/open-cravat/wiki/quickstart)
 
 
 ## Hackathon Goals
