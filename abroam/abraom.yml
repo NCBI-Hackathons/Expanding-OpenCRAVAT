@@ -20,7 +20,6 @@ output_columns:
   title: Population Allele Frequency
   type: float
   width: 68
--
 
 tags:
 - variants
