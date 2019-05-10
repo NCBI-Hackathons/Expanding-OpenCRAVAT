@@ -1,4 +1,4 @@
-# An open store for variant and gene prioritization tools
+# OVARIE: Open CRAVAT VARiant Interpretation Expansion
 
 ### Hackathon Members
 Kymberleigh Pagel, Johns Hopkins University, Baltimore MD 21218, <kpagel1@jhu.edu>  <br>
