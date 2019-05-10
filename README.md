@@ -163,7 +163,8 @@ We obtained the HGDP_938.geno file from the [Human Genome Diversity Project](htt
 ![alt text](images/HGDP_converted.png) <br>
 *HGDP allele frequency file format*
 
-
+![alt text](images/HGDP.png) <br>
+*HGDP allele frequency columns in OpenCRAVAT GUI*
 
 **ABraOM allele frequencies**
 
