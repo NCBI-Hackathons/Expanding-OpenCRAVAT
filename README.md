@@ -186,7 +186,7 @@ We obtained the file BRaOM_60+_SABE_609_exomes_annotated.gz from http://abraom.i
 ## Lessons Learned
 * Data is  _**messy**_, even if it is made available through a “reputable” institution
 * Data cleaning can be (and most likely will be) time consuming
-  * Our recommendation is to budget 2x-3x more time for data processing than you expecthope to
+  * Our recommendation is to budget 2x-3x more time for data processing than you ~~hope~~expect to
 * Our approach to the work was to split into teams based on individual expertise
   * This was crucial to our success, but developing a more detailed flowchart (e.g. understanding everyone's roles and the data everyone will be using) before splitting would have helped in bringing parts of the project together in the end
 * This work would not have been accomplished in the past 3 days without the following packages
