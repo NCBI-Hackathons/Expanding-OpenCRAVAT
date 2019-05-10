@@ -15,7 +15,7 @@ level: variant
 
 
 output_columns:
-- filterable: true
+  filterable: true
   name: allele_freq
   title: Population Allele Frequency
   type: float
