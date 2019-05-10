@@ -149,7 +149,7 @@ The brain regions we are examining are the Anterior Cingulate Cortex (7283 singl
 
 
 ### Goal 2: Incorporate additional representation for under-studied populations
-We will incorporate allele frequencies from [HGDP](https://www.hagsc.org/hgdp/). 
+We obtained the HGDP_938.geno file from the [Human Genome Diversity Project](https://www.hagsc.org/hgdp/). 
 
 **HGDP allele frequencies**
 
