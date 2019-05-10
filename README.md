@@ -186,4 +186,12 @@ We obtained the file BRaOM_60+_SABE_609_exomes_annotated.gz from http://abraom.i
 ## Lessons Learned
 * Data is messy, even though it is made available through a “reputable” institution
 * Data cleaning can be time consuming
+* This work would not have been accomplished in the past 3 days without the following packages
+  * in Python
+    * [pandas](https://pandas.pydata.org/)
+    * [bokeh](https://bokeh.pydata.org/en/latest/)
+  * in R
+    * [seurat](https://satijalab.org/seurat/)
+    * [matrix](https://cran.r-project.org/web/packages/Matrix/index.html)
+    * [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html)
 
