@@ -199,5 +199,5 @@ We obtained the file BRaOM_60+_SABE_609_exomes_annotated.gz from http://abraom.i
     * [matrix](https://cran.r-project.org/web/packages/Matrix/index.html) - a library containing matrix classes
     * [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) - a package containing tools for manipulating data frame like objects
   * in SQLite
-    * [DB Browser](https://sqlitebrowser.org/) - a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.
+    * [DB Browser](https://sqlitebrowser.org/) - a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite
 
