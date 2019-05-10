@@ -44,14 +44,19 @@ class CravatAnnotator(BaseAnnotator):
         input_ref = input_data['ref_base']
         input_alt = input_data['alt_base']
 
-        sql_q = 'SELECT African, European, Middle_Eastern, CS_Asian, East_Asian, Oceanian, Native_American FROM hgdp_table WHERE CHR={} AND POS={} AND REF={} and ALT={};'.format(input_chrom, input_pos, input_ref, input_alt)
+        sql_q = 'SELECT  African, European, Middle_Eastern, CS_Asian, East_Asian, Oceanian, Native_American FROM hgdp_table WHERE CHR={} AND POS={} AND REF={} and ALT={};'.format(input_chrom, input_pos, input_ref, input_alt)
 
         self.cursor.execute(sql_q)
-        sql_q_result = self.cursor.fetchone()
+        sql_q_result = self.cursor.fetchall()
 
         african_allele_freq = ''
         european_allele_freq = ''
-
+        middle_eastern_allele_freq = ''
+        cs_asian_allele_freq = ''
+        east_asian_allele_freq = ''
+        oceanian_allele_freq = ''
+        native_american_allele_freq = ''
+        
 
         if sql_q_result:
             african_allele_freq += sql_q_result[0]
@@ -59,6 +64,21 @@ class CravatAnnotator(BaseAnnotator):
 
             european_allele_freq += sql_q_result[1]
             out['european_allele_freq'] = european_allele_freq
+
+            middle_eastern_allele_freq += sql_q_result[2]
+            out['middle_eastern_allele_freq'] = middle_eastern_allele_freq
+
+            cs_asian_allele_freq += sql_q_result[3]
+            out['cs_asian_allele_freq'] = cs_asian_allele_freq
+
+            east_asian_allele_freq += sql_q_result[4]
+            out['east_asian_allele_freq'] = east_asian_allele_freq
+
+            oceanian_allele_freq += sql_q_result[5]
+            out['oceanian_allele_freq'] = oceanian_allele_freq
+
+            native_american_allele_freq += sql_q_result[6]
+            out['native_american_allele_freq'] = native_american_allele_freq
 
             return out
 
