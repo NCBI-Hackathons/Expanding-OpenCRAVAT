@@ -104,8 +104,8 @@ The [**Online Archive of Brazilian Mutations**](http://abraom.ib.usp.br/) is a v
 
 
 
-**(3) Stretch Goal: Identify sources of curated gene lists** <br>
-Gene lists are groups of genes known to be influential in the development and/or maintenance of molecular pathways or diseases. We plan on implementing a module that allows users to see if the variants in their uploaded file correspond to a significant proportion of genes in validated gene lists.  
+**(3) Stretch Goal: Identify sources of curated gene lists for gene set enrichment analysis (GSEA)** <br>
+Gene lists are groups of genes known to be influential in the development and/or maintenance of molecular pathways or diseases. We plan on implementing a module that allows users to see if the variants in their uploaded file correspond to a significant proportion of genes in validated gene lists through GSEA.  
 
 ## Flowchart
 To accomplish these tasks, we will need to carefully format the data and generate several accessory files necessary for incorporation into Open-CRAVAT 
