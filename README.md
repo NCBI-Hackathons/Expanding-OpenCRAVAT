@@ -149,6 +149,8 @@ The brain regions we are examining are the Anterior Cingulate Cortex (7283 singl
 ![alt text](images/sodexample.png) <br>
 *Example of APOE expression in two brain regions*
 
+![alt text](images/snapshot_gene_expression_boxplot.PNG) <br>
+*Example of boxplot output for a single gene across regions*
 
 ### Goal 2: Incorporate additional representation for under-studied populations
 
