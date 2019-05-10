@@ -152,11 +152,16 @@ The brain regions we are examining are the Anterior Cingulate Cortex (7283 singl
 ### Goal 2: Incorporate additional representation for under-studied populations
 We will incorporate allele frequencies from [HGDP](https://www.hagsc.org/hgdp/). 
 
+**HGDP allele frequencies**
+
 ![alt text](images/hgdp_data.png) <br>
 *HGDP source data file format*
 
-![alt text](
-images/abraom.png) <br>
+**ABraOM allele frequencies**
+
+We obtained the file BRaOM_60+_SABE_609_exomes_annotated.gz from http://abraom.ib.usp.br/download/. After minor editing to reduce file size by the removal of additional data fields, we convert the remaining relevant data fields into a tsv file (ABraOM.tsv). The tsv file is converted into a sqlite for use by the OpenCRAVAT framework (abraom.sqlite). We additionally generated several files to interface between OpenCRAVAT and the sqlite table, as described above. Relevant files are included in the abroam folder. 
+
+![alt text](images/abraom.png) <br>
 *Screenshot of the newly-added ABraOM Brazillian allele frequencies*
 
 ### Stretch Goal: Assemble sources of well-curated gene lists
