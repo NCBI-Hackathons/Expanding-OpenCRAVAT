@@ -149,12 +149,19 @@ The brain regions we are examining are the Anterior Cingulate Cortex (7283 singl
 
 
 ### Goal 2: Incorporate additional representation for under-studied populations
-We obtained the HGDP_938.geno file from the [Human Genome Diversity Project](https://www.hagsc.org/hgdp/). In total, there are  938 individuals from 52 populations. Populations were grouped into 7 subsets based on geographical locations. The population subsets were: African(129) , European (159), East_Asian(229), cental and south Asian(200), Oceanian(28), Middle Eastern(133) and Native Americans(63). Alternative allele frequency was calculated for each population. Allele frequency was generated for each population and put into CSV format for conversion to sqlite file. 
+
 
 **HGDP allele frequencies**
 
+We obtained the HGDP_938.geno file from the [Human Genome Diversity Project](https://www.hagsc.org/hgdp/). In total, there are  938 individuals from 52 populations. Populations were grouped into 7 subsets based on geographical locations. The population subsets were: African(129) , European (159), East_Asian(229), cental and south Asian(200), Oceanian(28), Middle Eastern(133) and Native Americans(63). Alternative allele frequency was calculated for each population. Allele frequency was generated for each population and put into CSV format for conversion to sqlite file. In total, the compiled allele frequencies are comprised of 632,958 variants across the 7 populations. 
+
 ![alt text](images/hgdp_data.png) <br>
 *HGDP source data file format*
+
+![alt text](images/HGDP_converted.png) <br>
+*HGDP allele frequency file format*
+
+
 
 **ABraOM allele frequencies**
 
