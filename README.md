@@ -165,7 +165,7 @@ We obtained the HGDP_938.geno file from the [Human Genome Diversity Project](htt
 
 **ABraOM allele frequencies**
 
-We obtained the file BRaOM_60+_SABE_609_exomes_annotated.gz from http://abraom.ib.usp.br/download/. After minor editing to reduce file size by the removal of additional data fields, we convert the remaining relevant data fields into a tsv file (ABraOM.tsv). The tsv file is converted into a sqlite for use by the OpenCRAVAT framework (abraom.sqlite). We additionally generated several files to interface between Open-CRAVAT and the sqlite table, as described above. Relevant files are included in the abroam folder. 
+We obtained the file BRaOM_60+_SABE_609_exomes_annotated.gz from http://abraom.ib.usp.br/download/. After minor editing to reduce file size by the removal of additional data fields, we convert the remaining relevant data fields into a tsv file (ABraOM.tsv). The tsv file is converted into a sqlite for use by the Open-CRAVAT framework (abraom.sqlite). We additionally generated several files to interface between Open-CRAVAT and the sqlite table, as described above. Relevant files are included in the abroam folder. 
 
 ![alt text](images/abraom.png) <br>
 *Screenshot of the newly-added ABraOM Brazillian allele frequencies*
