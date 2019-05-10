@@ -17,7 +17,7 @@ Chris Shin, NIH/NIAID, Bethesda MD 20892, <chris.shin@nih.gov> <br>
 *Example of the Open CRAVAT interface*
 
 ### Annotators
-As of May 2019, the Open CRAVAT Store has 65 annotators, converters, and visualization widgets available for use. Annotators range from genomic feature insights to population-level frequencies and clinical interpretations. Convertors take input in forms other than VCF (Variant Cell Format), such as dbSNP rsid and 23andMe formats, and make them compatible to Open-CRAVAT. There are currently three visualization widgets that can be downloaded: a summary of the top genes ranked by total variants, a haplotype information widget, and an embedded interactive genome visualization component developed by [Integrative Genomics Viewer (IGV)](https://github.com/igvteam/igv.js). 
+As of May 2019, the Open CRAVAT Store has 65 annotators, converters, and visualization widgets available for use. Annotators range from genomic feature insights to population-level frequencies and clinical interpretations. Convertors take input in forms other than VCF (Variant Cell Format), such as dbSNP rsid and 23andMe formats, and make them compatible to Open CRAVAT. There are currently three visualization widgets that can be downloaded: a summary of the top genes ranked by total variants, a haplotype information widget, and an embedded interactive genome visualization component developed by [Integrative Genomics Viewer (IGV)](https://github.com/igvteam/igv.js). 
 
 ![alt text](images/store_front_page.png)
 *Home Page for the Open CRAVAT store*
@@ -37,7 +37,7 @@ Data Sources Accessible through Open CRAVAT | Type of Data
 [denovo-db](http://denovo-db.gs.washington.edu/ )|germline de novo variants
 [NHLBI GO Exome Sequencing Project (ESP)](http://evs.gs.washington.edu/EVS/) | exome variants
 [Essential Genes](https://doi.org/10.1371/journal.pgen.1003484 )| genetic variation and mutational burden in human orthologs
-[ExAC Gene and CNV](http://exac.broadinstitute.org/ )| probability of loss-of-function. (LoF) intolerance/intolerance
+[ExAC Gene and CNV](http://exac.broadinstitute.org/ )| probability of loss-of-function intolerance/intolerance
 [Flanking Sequence](https://github.com/pdxgx/neoepiscope )| reference and alternate sequences for flanking bases
 [Gene Ontology](http://geneontology.org/) | functions of genes and gene products
 [GHIS](https://doi.org/10.1093/nar/gkv474) | haploinsufficiency scores 
@@ -92,15 +92,15 @@ Link to [Hackathon Plan and Workflow Slides](https://docs.google.com/presentatio
 
 **(1) Add sources of single cell RNA-seq expression data** <br>
 
-The [Allen Brain Atlas](http://human.brain-map.org/) includes a gene expression survey in multiple adult control brains integrating anatomic and genomic information. The dataset includes more than 62,000 gene probes per profile with around 500 samples per hemisphere across cerebrum, cerebellum and brainstem. In this work, we seek to create an OpenCRAVAT annotator that displays whether a given gene is expressed within different regions of the brain. A potential application for this annotator would include supporting the analysis of variants putatively related to ASD and other neurodevelopmental disease, to ascertain variants within genes that are expressed in the appropriate brain regions. 
+The [**Allen Brain Atlas**](http://human.brain-map.org/) includes a gene expression survey in multiple adult control brains integrating anatomic and genomic information. The dataset includes more than 62,000 gene probes per profile with around 500 samples per hemisphere across cerebrum, cerebellum and brainstem. In this work, we seek to create an OpenCRAVAT annotator that displays whether a given gene is expressed within different regions of the brain. A potential application for this annotator would include supporting the analysis of variants putatively related to ASD and other neurodevelopmental disease, to ascertain variants within genes that are expressed in the appropriate brain regions. 
 
 **(2) Incorporate additional representation for under-studied populations** <br> 
 
-The **[Human Genome Diversity Project]**(https://www.hagsc.org/hgdp/) from a group of scientists across several labs at Stanford University analyzed DNA from 1,043 individuals among 51 different populations of Africa, Europe, Middle East, South and Central Asia, East Asia, Oceania and the Americas. Details on the individuals included in this collection are described in H. Cann et al. Science 296: 261-262 (2002) and its Supplemental Data; Rosenberg et al. Science 298: 2381-2385 (2002); and Rosenberg et al. PLoS Genetics 1: 660-671 (2005).
+The [**Human Genome Diversity Project**](https://www.hagsc.org/hgdp/) from a group of scientists across several labs at Stanford University analyzed DNA from 1,043 individuals among 51 different populations of Africa, Europe, Middle East, South and Central Asia, East Asia, Oceania and the Americas. Details on the individuals included in this collection are described in H. Cann et al. Science 296: 261-262 (2002) and its Supplemental Data; Rosenberg et al. Science 298: 2381-2385 (2002); and Rosenberg et al. PLoS Genetics 1: 660-671 (2005).
 
 In particular, native American and Middle Eastern populations represent populations that are not well represented in OpenCRAVAT. In addition, several subpopulations evaluated in this work do not have representation in either the 1000 Genomes Project or gnomAD, two sources currently available in the OpenCRAVAT store. Due to small sample size n<10 for several subpopulations, we are required to present aggregate per-population allele frequencies to present more meaningful values. 
 
-The **Online Archive of Brazilian Mutations** (http://abraom.ib.usp.br/) is a variant repository containing genomic variants of Brazilians, with the goal to provide the community with genetic variability found in Brazil. The initial deposited cohort  comprise exomic variants of 609 elderly individuals from a census-based sample from the city of São Paulo. A total of 2,382,573 variants were called before filtering and are available at our browser. From that total, 1,264,224 are high confidence (GATK PASS flags and excluding CEGH-USP FDP/FAB flags), which we retain for use in OpenCRAVAT.
+The [**Online Archive of Brazilian Mutations**](http://abraom.ib.usp.br/) is a variant repository containing genomic variants of Brazilians, with the goal to provide the community with genetic variability found in Brazil. The initial deposited cohort  comprise exomic variants of 609 elderly individuals from a census-based sample from the city of São Paulo. A total of 2,382,573 variants were called before filtering and are available at our browser. From that total, 1,264,224 are high confidence (GATK PASS flags and excluding CEGH-USP FDP/FAB flags), which we retain for use in OpenCRAVAT.
 
 
 
