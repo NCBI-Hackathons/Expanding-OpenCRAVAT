@@ -1,0 +1,41 @@
+# 'title' is the name of the module that will be displayed to the user
+title: ABRaOM
+
+# 'version' is the version of the annotator. It is primarily used when
+# publishing a module, but is required for all modules.
+version: 0.0.1
+
+# 'type' is the type of module described by this .yml file. In this case it is
+# 'annotator'
+type: annotator
+
+# 'level' is 'variant' or 'gene'
+level: variant
+
+
+
+output_columns:
+- filterable: true
+  name: allele_freq
+  title: Population Allele Frequency
+  type: float
+  width: 68
+
+tags:
+- variants
+- populations
+- human
+- diversity
+
+
+# description is a short description of what the annotator does. Try to limit it
+# to around 80 characters.
+description: ABRaOM
+
+# developer is you!
+developer:
+  name: 'Kymberleigh Pagel, Lead; Anna Chang; Zhi Liu; Summer Rankin; Danielle Rubin; Chris Shin'
+  organization: 'NCBI Hackathon 2019'
+  email: ''
+  website: ''
+  citation: ''
