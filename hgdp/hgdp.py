@@ -15,8 +15,9 @@ class CravatAnnotator(BaseAnnotator):
         sqlite3.Cursor object is stored as self.cursor.
         """
         # Verify the connection and cursor exist.
-        assert isinstance(self.dbconn, sqlite3.Connection)
-        assert isinstance(self.cursor, sqlite3.Cursor)
+        #assert isinstance(self.dbconn, sqlite3.Connection)
+        #assert isinstance(self.cursor, sqlite3.Cursor)
+        pass
 
     def annotate(self, input_data, secondary_data=None):
         """
@@ -44,10 +45,11 @@ class CravatAnnotator(BaseAnnotator):
         input_ref = input_data['ref_base']
         input_alt = input_data['alt_base']
 
-        sql_q = 'SELECT  African, European, Middle_Eastern, CS_Asian, East_Asian, Oceanian, Native_American FROM hgdp_table WHERE CHR={} AND POS={} AND REF={} and ALT={};'.format(input_chrom, input_pos, input_ref, input_alt)
+        sql_q = 'SELECT  African, European, Middle_Eastern, CS_Asian, East_Asian, Oceanian, Native_American FROM hgdp_table WHERE CHR="%s" AND POS=%s AND REF="%s" and ALT="%s";' \
+            %(input_chrom, input_pos, input_ref, input_alt)
 
         self.cursor.execute(sql_q)
-        sql_q_result = self.cursor.fetchall()
+        sql_q_result = self.cursor.fetchone()
 
         african_allele_freq = ''
         european_allele_freq = ''
@@ -56,7 +58,7 @@ class CravatAnnotator(BaseAnnotator):
         east_asian_allele_freq = ''
         oceanian_allele_freq = ''
         native_american_allele_freq = ''
-        
+
 
         if sql_q_result:
             african_allele_freq += sql_q_result[0]
@@ -80,7 +82,12 @@ class CravatAnnotator(BaseAnnotator):
             native_american_allele_freq += sql_q_result[6]
             out['native_american_allele_freq'] = native_american_allele_freq
 
-            return out
+        else:
+
+            out['native_american_allele_freq'] = 999.99
+
+
+        return out
 
 
     def cleanup(self):
