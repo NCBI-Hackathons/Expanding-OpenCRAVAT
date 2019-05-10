@@ -1,4 +1,4 @@
-# OVARIE: Open CRAVAT VARiant Interpretation Expansion
+# OVARIE: Open-CRAVAT VARiant Interpretation Expansion
 
 ### Hackathon Members
 Kymberleigh Pagel, Johns Hopkins University, Baltimore MD 21218, <kpagel1@jhu.edu>  <br>
@@ -9,20 +9,20 @@ Danielle Rubin, NIH, Bethesda MD 20892, <danielle.rubin@nih.gov>  <br>
 Chris Shin, NIH/NIAID, Bethesda MD 20892, <chris.shin@nih.gov> <br>
 
 
-## Introduction to Open CRAVAT
+## Introduction to Open-CRAVAT
 
-[Open CRAVAT](https://github.com/KarchinLab/open-cravat) is a python package that performs genomic variant interpretation. The modular and locally-installed command-line or GUI interface allows for  annoations of gene- and variant-level impact, interactions, conservation, and scoring. In this work, we advance the platform by the addition of new annoation sources to assist in the interrogation of genetic variation.
+[Open-CRAVAT](https://github.com/KarchinLab/open-cravat) is a python package that performs genomic variant interpretation. The modular and locally-installed command-line or GUI interface allows for  annoations of gene- and variant-level impact, interactions, conservation, and scoring. In this work, we advance the platform by the addition of new annoation sources to assist in the interrogation of genetic variation.
 
 ![alt text](images/results.png) 
-*Example of the Open CRAVAT interface*
+*Example of the Open-CRAVAT interface*
 
 ### Annotators
-As of May 2019, the Open CRAVAT Store has 65 annotators, converters, and visualization widgets available for use. Annotators range from genomic feature insights to population-level frequencies and clinical interpretations. Convertors take input in forms other than VCF (Variant Cell Format), such as dbSNP rsid and 23andMe formats, and make them compatible to Open CRAVAT. There are currently three visualization widgets that can be downloaded: a summary of the top genes ranked by total variants, a haplotype information widget, and an embedded interactive genome visualization component developed by [Integrative Genomics Viewer (IGV)](https://github.com/igvteam/igv.js). 
+As of May 2019, the Open-CRAVAT Store has 65 annotators, converters, and visualization widgets available for use. Annotators range from genomic feature insights to population-level frequencies and clinical interpretations. Convertors take input in forms other than VCF (Variant Cell Format), such as dbSNP rsid and 23andMe formats, and make them compatible to Open-CRAVAT. There are currently three visualization widgets that can be downloaded: a summary of the top genes ranked by total variants, a haplotype information widget, and an embedded interactive genome visualization component developed by [Integrative Genomics Viewer (IGV)](https://github.com/igvteam/igv.js). 
 
 ![alt text](images/store_front_page.png)
-*Home Page for the Open CRAVAT store*
+*Home Page for the Open-CRAVAT store*
 
-Data Sources Accessible through Open CRAVAT | Type of Data
+Data Sources Accessible through Open-CRAVAT | Type of Data
  ------- | ---
 [1000 Genomes Project](http://www.internationalgenome.org/home) | allele frequencies
 [The Cancer Genome Atlas](https://gdc.cancer.gov/about-data/publications/ATACseq-AWG) | genome-wide chromatin accessibility profiles of tumor samples 
@@ -65,7 +65,7 @@ Data Sources Accessible through Open CRAVAT | Type of Data
 [VISTA Enhancer Browser](https://enhancer.lbl.gov/)  | experimentally validated enhancers 
 
 
-Analysis Tools Available through Open CRAVAT | Function
+Analysis Tools Available through Open-CRAVAT | Function
 -----|-----
 [CHASMplus](http://chasmplus.readthedocs.io/en/latest/) | classification of missense mutations as drivers or passengers in human cancers 
 [FATHMM](http://fathmm.biocompute.org.uk/index.html )| prediction of functional effects of protein missense mutations|
@@ -92,13 +92,13 @@ Link to [Hackathon Plan and Workflow Slides](https://docs.google.com/presentatio
 
 **(1) Add sources of single cell RNA-seq expression data** <br>
 
-The [**Allen Brain Atlas**](http://human.brain-map.org/) includes a gene expression survey in multiple adult control brains integrating anatomic and genomic information. The dataset includes more than 62,000 gene probes per profile with around 500 samples per hemisphere across cerebrum, cerebellum and brainstem. In this work, we seek to create an OpenCRAVAT annotator that displays whether a given gene is expressed within different regions of the brain. A potential application for this annotator would include supporting the analysis of variants putatively related to ASD and other neurodevelopmental disease, to ascertain variants within genes that are expressed in the appropriate brain regions. 
+The [**Allen Brain Atlas**](http://human.brain-map.org/) includes a gene expression survey in multiple adult control brains integrating anatomic and genomic information. The dataset includes more than 62,000 gene probes per profile with around 500 samples per hemisphere across cerebrum, cerebellum and brainstem. In this work, we seek to create an Open-CRAVAT annotator that displays whether a given gene is expressed within different regions of the brain. A potential application for this annotator would include supporting the analysis of variants putatively related to ASD and other neurodevelopmental disease, to ascertain variants within genes that are expressed in the appropriate brain regions. 
 
 **(2) Incorporate additional representation for under-studied populations** <br> 
 
 The [**Human Genome Diversity Project**](https://www.hagsc.org/hgdp/) from a group of scientists across several labs at Stanford University analyzed DNA from 1,043 individuals among 51 different populations of Africa, Europe, Middle East, South and Central Asia, East Asia, Oceania and the Americas. Details on the individuals included in this collection are described in H. Cann et al. Science 296: 261-262 (2002) and its Supplemental Data; Rosenberg et al. Science 298: 2381-2385 (2002); and Rosenberg et al. PLoS Genetics 1: 660-671 (2005).
 
-In particular, native American and Middle Eastern populations represent populations that are not well represented in OpenCRAVAT. In addition, several subpopulations evaluated in this work do not have representation in either the 1000 Genomes Project or gnomAD, two sources currently available in the OpenCRAVAT store. Due to small sample size n<10 for several subpopulations, we are required to present aggregate per-population allele frequencies to present more meaningful values. 
+In particular, native American and Middle Eastern populations represent populations that are not well represented in Open-CRAVAT. In addition, several subpopulations evaluated in this work do not have representation in either the 1000 Genomes Project or gnomAD, two sources currently available in the OpenCRAVAT store. Due to small sample size n<10 for several subpopulations, we are required to present aggregate per-population allele frequencies to present more meaningful values. 
 
 The [**Online Archive of Brazilian Mutations**](http://abraom.ib.usp.br/) is a variant repository containing genomic variants of Brazilians, with the goal to provide the community with genetic variability found in Brazil. The initial deposited cohort  comprise exomic variants of 609 elderly individuals from a census-based sample from the city of São Paulo. A total of 2,382,573 variants were called before filtering and are available at our browser. From that total, 1,264,224 are high confidence (GATK PASS flags and excluding CEGH-USP FDP/FAB flags), which we retain for use in OpenCRAVAT.
 
@@ -112,9 +112,9 @@ To accomplish these tasks, we will need to carefully format the data and generat
 ![alt text](images/flowchart.png) 
 
 
-### Components necessary to create an annotator (from [open CRAVAT wiki](https://github.com/KarchinLab/open-cravat/wiki/4.-Developer-Tutorial-(Annotators)))
+### Components necessary to create an annotator (from [Open-CRAVAT wiki](https://github.com/KarchinLab/open-cravat/wiki/4.-Developer-Tutorial-(Annotators)))
 
-An Open CRAVAT annotator consists of a python file, a YAML file, a data directory, and a markdown file. The file structure is 
+An Open-CRAVAT annotator consists of a python file, a YAML file, a data directory, and a markdown file. The file structure is 
 
 ```text
 annotator/
@@ -126,7 +126,7 @@ annotator/
 
 `annotator.md`: The markdown file describes the module to prospective users. 
 
-`annotator.yml`: The YAML file defines the input and output interfaces between an annotator and the rest of OpenCRAVAT. The YAML file specifies what data will be fed to `annotator.py`, and what data OpenCRAVAT should expect `annotator.py` to return. 
+`annotator.yml`: The YAML file defines the input and output interfaces between an annotator and the rest of Open-CRAVAT. The YAML file specifies what data will be fed to `annotator.py`, and what data Open-CRAVAT should expect `annotator.py` to return. 
 
 `annotator.py`: The python module receives input data describing a single variant/gene, and uses it to lookup additional information specific to that annotator. An `annotator.py` works by extending a provided base class, `BaseAnnotator`, and implementing three instance methods: `setup`, `annotate`, and `cleanup`.
 
