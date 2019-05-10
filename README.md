@@ -17,7 +17,7 @@ Chris Shin, NIH/NIAID, Bethesda MD 20892, <chris.shin@nih.gov> <br>
 *Example of the Open-CRAVAT interface*
 
 ### Open-CRAVAT Store
-As of May 2019, the Open-CRAVAT Store has 65 annotators, converters, and visualization widgets available for use. Annotators range from genomic feature insights to population-level frequencies and clinical interpretations. Convertors take input in forms other than VCF (Variant Cell Format), such as dbSNP rsid and 23andMe formats, and make them compatible to Open-CRAVAT. There are currently three visualization widgets that can be downloaded: a summary of the top genes ranked by total variants, a haplotype information widget, and an embedded interactive genome visualization component developed by [Integrative Genomics Viewer (IGV)](https://github.com/igvteam/igv.js). 
+As of May 2019, the Open-CRAVAT Store has 65 annotators, converters, and visualization widgets available for use. Annotators range from genomic feature insights to population-level frequencies and clinical interpretations. Convertors take input in forms other than VCF (Variant Cell Format), such as dbSNP rsid and 23andMe formats, and make them compatible to Open-CRAVAT. There are currently three visualization widgets that can be downloaded: a summary of the top genes ranked by total variants, a haplotype information widget, and an embedded interactive genome visualization component developed by [Integrative Genomics Viewer (IGV)](https://github.com/igvteam/igv.js). Items in the store range from 2 KB to 29 GB, and they can be individually downloaded according to the user's research interests.
 
 ![alt text](images/store_front_page.png)
 *Home Page for the Open-CRAVAT store*
