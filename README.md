@@ -183,4 +183,7 @@ We obtained the file BRaOM_60+_SABE_609_exomes_annotated.gz from http://abraom.i
 * [NetVenn](https://probes.pw.usda.gov/NetVenn/#&panel1-5) collection of gene sets for humans and animals  https://probes.pw.usda.gov/NetVenn/downloads.php <br>
 * SFARI GENE https://www.sfari.org/resource/sfari-gene/
 
+## Lessons Learned
+* Data is messy, even though it is made available through a “reputable” institution
+* Data cleaning can be time consuming
 
