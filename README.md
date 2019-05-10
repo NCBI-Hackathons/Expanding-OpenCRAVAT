@@ -98,9 +98,9 @@ The [**Allen Brain Atlas**](http://human.brain-map.org/) includes a gene express
 
 The [**Human Genome Diversity Project**](https://www.hagsc.org/hgdp/) from a group of scientists across several labs at Stanford University analyzed DNA from 1,043 individuals among 51 different populations of Africa, Europe, Middle East, South and Central Asia, East Asia, Oceania and the Americas. Details on the individuals included in this collection are described in H. Cann et al. Science 296: 261-262 (2002) and its Supplemental Data; Rosenberg et al. Science 298: 2381-2385 (2002); and Rosenberg et al. PLoS Genetics 1: 660-671 (2005).
 
-In particular, native American and Middle Eastern populations represent populations that are not well represented in Open-CRAVAT. In addition, several subpopulations evaluated in this work do not have representation in either the 1000 Genomes Project or gnomAD, two sources currently available in the OpenCRAVAT store. Due to small sample size n<10 for several subpopulations, we are required to present aggregate per-population allele frequencies to present more meaningful values. 
+In particular, native American and Middle Eastern populations represent populations that are not well represented in Open-CRAVAT. In addition, several subpopulations evaluated in this work do not have representation in either the 1000 Genomes Project or gnomAD, two sources currently available in the Open-CRAVAT store. Due to small sample size n<10 for several subpopulations, we are required to present aggregate per-population allele frequencies to present more meaningful values. 
 
-The [**Online Archive of Brazilian Mutations**](http://abraom.ib.usp.br/) is a variant repository containing genomic variants of Brazilians, with the goal to provide the community with genetic variability found in Brazil. The initial deposited cohort  comprise exomic variants of 609 elderly individuals from a census-based sample from the city of São Paulo. A total of 2,382,573 variants were called before filtering and are available at our browser. From that total, 1,264,224 are high confidence (GATK PASS flags and excluding CEGH-USP FDP/FAB flags), which we retain for use in OpenCRAVAT.
+The [**Online Archive of Brazilian Mutations**](http://abraom.ib.usp.br/) is a variant repository containing genomic variants of Brazilians, with the goal to provide the community with genetic variability found in Brazil. The initial deposited cohort  comprise exomic variants of 609 elderly individuals from a census-based sample from the city of São Paulo. A total of 2,382,573 variants were called before filtering and are available at our browser. From that total, 1,264,224 are high confidence (GATK PASS flags and excluding CEGH-USP FDP/FAB flags), which we retain for use in Open-CRAVAT.
 
 
 
@@ -108,7 +108,7 @@ The [**Online Archive of Brazilian Mutations**](http://abraom.ib.usp.br/) is a v
 Gene lists are groups of genes known to be influential in the development and/or maintenance of molecular pathways or diseases. We plan on implementing a module that allows users to see if the variants in their uploaded file correspond to a significant proportion of genes in validated gene lists.  
 
 ## Flowchart
-To accomplish these tasks, we will need to carefully format the data and generate several accessory files necessary for incorporation into Open CRAVAT 
+To accomplish these tasks, we will need to carefully format the data and generate several accessory files necessary for incorporation into Open-CRAVAT 
 ![alt text](images/flowchart.png) 
 
 
@@ -165,7 +165,7 @@ We obtained the HGDP_938.geno file from the [Human Genome Diversity Project](htt
 
 **ABraOM allele frequencies**
 
-We obtained the file BRaOM_60+_SABE_609_exomes_annotated.gz from http://abraom.ib.usp.br/download/. After minor editing to reduce file size by the removal of additional data fields, we convert the remaining relevant data fields into a tsv file (ABraOM.tsv). The tsv file is converted into a sqlite for use by the OpenCRAVAT framework (abraom.sqlite). We additionally generated several files to interface between OpenCRAVAT and the sqlite table, as described above. Relevant files are included in the abroam folder. 
+We obtained the file BRaOM_60+_SABE_609_exomes_annotated.gz from http://abraom.ib.usp.br/download/. After minor editing to reduce file size by the removal of additional data fields, we convert the remaining relevant data fields into a tsv file (ABraOM.tsv). The tsv file is converted into a sqlite for use by the OpenCRAVAT framework (abraom.sqlite). We additionally generated several files to interface between Open-CRAVAT and the sqlite table, as described above. Relevant files are included in the abroam folder. 
 
 ![alt text](images/abraom.png) <br>
 *Screenshot of the newly-added ABraOM Brazillian allele frequencies*
