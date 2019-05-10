@@ -184,14 +184,20 @@ We obtained the file BRaOM_60+_SABE_609_exomes_annotated.gz from http://abraom.i
 * SFARI GENE https://www.sfari.org/resource/sfari-gene/
 
 ## Lessons Learned
-* Data is messy, even though it is made available through a “reputable” institution
-* Data cleaning can be time consuming
+* Data is  _**messy**_, even if it is made available through a “reputable” institution
+* Data cleaning can be (and most likely will be) time consuming
+  * Our recommendation is to budget 2x-3x more time for data processing than you expecthope to
+* Our approach to the work was to split into teams based on individual expertise
+  * This was crucial to our success, but developing a more detailed flowchart (e.g. understanding everyone's roles and the data everyone will be using) before splitting would have helped in bringing parts of the project together in the end
 * This work would not have been accomplished in the past 3 days without the following packages
   * in Python
-    * [pandas](https://pandas.pydata.org/)
-    * [bokeh](https://bokeh.pydata.org/en/latest/)
+    * [pandas](https://pandas.pydata.org/) - a library containing data structures and data analysis tools
+    * [bokeh](https://bokeh.pydata.org/en/latest/) - a visualization library
+    * [PyLiftover](https://pypi.org/project/pyliftover/) - a library for quick and easy conversion of genomic (point) coordinates between different assemblies.
   * in R
-    * [seurat](https://satijalab.org/seurat/)
-    * [matrix](https://cran.r-project.org/web/packages/Matrix/index.html)
-    * [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html)
+    * [seurat](https://satijalab.org/seurat/) - a package designed for QC, analysis, and exploration of single-cell RNA-seq data
+    * [matrix](https://cran.r-project.org/web/packages/Matrix/index.html) - a library containing matrix classes
+    * [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) - a package containing tools for manipulating data frame like objects
+  * in SQLite
+    * [DB Browser](https://sqlitebrowser.org/) - a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.
 
