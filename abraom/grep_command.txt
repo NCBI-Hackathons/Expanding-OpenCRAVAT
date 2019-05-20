@@ -1,0 +1,1 @@
+grep "PASS" ABRaOM_60+_SABE_609_exomes_annotated | cut -f 1,2,3,4,15
